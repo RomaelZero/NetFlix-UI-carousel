@@ -161,6 +161,8 @@ darkBackGroundDiv.addEventListener("click",()=>{
 
 
         // Making darkBackGround div not visible once again
+        const videoContainer = document.querySelector(".video video");
+        videoContainer.pause();
         darkBackGroundDiv.style.pointerEvents = "none";
         darkBackGroundDiv.style.transition = "500ms";
         darkBackGroundDiv.style.opacity = 0;
